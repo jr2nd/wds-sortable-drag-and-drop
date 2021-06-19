@@ -2,7 +2,13 @@ const draggables = document.querySelectorAll('.dragme');
 const containers = document.querySelectorAll('.container');
 
 draggables.forEach(dragit => {
-  dragit.addEventListener('dragstart', () => {
+  dragit.addEventListener('touchstart', () => {
+    dragit.classList.add('dragging');
+  });
+  dragit.addEventListener('touchend', () => {
+    dragit.classList.remove('dragging');
+  });
+    dragit.addEventListener('dragstart', () => {
     dragit.classList.add('dragging');
   });
   dragit.addEventListener('dragend', () => {
