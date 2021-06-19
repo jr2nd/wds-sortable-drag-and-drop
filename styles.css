@@ -29,7 +29,7 @@ opacity: 50%;
 background-color: green;
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 300px) {
   .container {
     min-height: 2rem;
   }

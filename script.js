@@ -1,6 +1,5 @@
 const draggables = document.querySelectorAll('.dragme');
 const containers = document.querySelectorAll('.container');
-
 draggables.forEach(dragit => {
   dragit.addEventListener('touchstart', () => {
     dragit.classList.add('dragging');
