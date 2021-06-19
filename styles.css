@@ -28,3 +28,9 @@ background-color: yellow;
 opacity: 50%;
 background-color: green;
 }
+
+@media screen and (max-width: 500px) {
+  .dragme {
+    min-height: 2rem;
+  }
+}
