@@ -25,7 +25,6 @@ background-color: yellow;
   cursor: move;
 }
 .dragging {
-opacity: 50%;
 background-color: green;
 }
 
