@@ -7,18 +7,21 @@ draggables.forEach(dragit => {
   dragit.addEventListener('touchend', () => {
     dragit.classList.remove('dragging');
   });
-    dragit.addEventListener('dragstart', () => {
+  dragit.addEventListener('dragstart', () => {
     dragit.classList.add('dragging');
   });
   dragit.addEventListener('dragend', () => {
     dragit.classList.remove('dragging');
+  });
+  dragit.addEventListener('click', ()=> {
+    dragit.classList.toggle('clicked');
   });
 });
 
 containers.forEach(container => {
   container.addEventListener('dragover', e => {
     e.preventDefault();
-   /* const afterElement = getDragAfterElement(container, e.clientY)*/
+    /* const afterElement = getDragAfterElement(container, e.clientY)*/
     const dragged = document.querySelector('.dragging');
     container.appendChild(dragged);
   });
