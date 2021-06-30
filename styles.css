@@ -10,7 +10,7 @@ body {
   background-color: red;
 }
 .container {
-  background-color: whitesmoke;
+  background-color: purple;
 outline: auto;
 padding: 1em;
 border: 0;
@@ -22,8 +22,14 @@ border: 0;
 background-color: yellow;
   padding: 0;
   border: 0;
-  margin: 0;
+  margin: 0;yu: 7h 5ftr;
   cursor: move;
+}
+.dragme:first-child {
+border-radius: 10px 10px 0px 0px;
+}
+.dragme:last-child {
+  border-radius: 0px 0px 10px 10px;
 }
 .dragging {
 background-color: green;
